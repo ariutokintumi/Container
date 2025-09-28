@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-satoship.py — Create & Inspect "Satoships" on Bitcoin via OP_RETURN anchors.
+container.py — Create & Inspect "container" on Bitcoin via OP_RETURN anchors.
 
 FEATURES
 - Reads manifest JSON from a file (txt/json).
@@ -24,7 +24,7 @@ IMPORTANT LIMITATION
 
 USAGE
   Create:
-    python satoship.py create \
+    python container.py create \
       --manifest ./manifest.json \
       --recipient <btc_address> \
       --input-utxo <txid:vout> \
@@ -32,7 +32,7 @@ USAGE
       --fee-rate 8
 
   Inspect:
-    python satoship.py inspect --tx <txid>
+    python container.py inspect --tx <txid>
 
 CONFIG (JSON) default ~/.satoship_config.json, override with --config
 {
@@ -379,7 +379,7 @@ def cmd_inspect(args, config):
 # ---------------------------- CLI ---------------------------- #
 
 def build_cli():
-    p = argparse.ArgumentParser(description="Satoships — One Satoshi = One Ship")
+    p = argparse.ArgumentParser(description="container — One Satoshi = One Ship")
     p.add_argument("--config", default=os.path.expanduser("~/.satoship_config.json"), help="Path to JSON config")
 
     sub = p.add_subparsers(dest="cmd")
