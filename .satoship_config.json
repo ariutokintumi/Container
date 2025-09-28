@@ -1,0 +1,13 @@
+{
+  "rpc_url": "http://rpcuser:rpcpass@127.0.0.1:8332",
+  "network": "mainnet",                     // "mainnet" | "testnet" | "signet" (informational)
+  "change_address": "",                     // optional: force change address
+  "private_key_wif": null,                  // optional: if wallet can't sign via signrawtransactionwithwallet
+  "preferred_fee_rate_sat_per_vb": 5,       // default fee rate if --fee-rate not provided
+  "ipfs": {
+    "api": "http://127.0.0.1:5001/api/v0",  // optional local IPFS API (recommended)
+    "gateway": "https://ipfs.io/ipfs",      // for fetching during inspect
+    "pinata_api_key": null,                 // optional
+    "pinata_secret_api_key": null           // optional
+  }
+}

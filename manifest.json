@@ -1,0 +1,13 @@
+{
+  "satoship_version": "0.1",
+  "ship_id": "SAT-DELHI-0001",            // your chosen ID/NUMBER
+  "payload_type": "application/json",     // MIME type of your payload
+  "payload_uri": null,                    // optional: ipfs://... or https://... if you already host it
+  "metadata": {                           // free-form metadata (RWA refs, BRC-20 context, art info, etc.)
+    "title": "Example",
+    "description": "One Satoshi = One Ship"
+  },
+  "created_by": "ariutokintumi",
+  "created_at": "2025-09-27T00:00:00Z",
+  "notes": "Demo"
+}
